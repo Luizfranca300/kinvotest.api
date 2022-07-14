@@ -5,5 +5,6 @@ export interface WalletMoviment{
     description:string;
     value: number;
     type: MovimentType;
+    DateMoviment: Date;
   }
 
