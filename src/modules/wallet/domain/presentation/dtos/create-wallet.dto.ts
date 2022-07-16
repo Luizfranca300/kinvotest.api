@@ -1,15 +1,16 @@
-import { Expose } from "class-transformer";
-import { CreateWalletInput } from "src/modules/wallet/inputs";
+import { Expose, Type } from "class-transformer";
+import { CreateWalletInput, CreateWalletMovimentInput } from "src/modules/wallet/inputs";
 import {
-    ArrayUnique,
     IsArray,
     IsNumber,
     IsString,
-    IsUUID,
+    ValidateNested,
   } from 'class-validator';
+import { CreateWalletMovimentDTO } from "./create-wallet-moviment.dto";
 
 @Expose()
 export class CreateWalletDTO implements CreateWalletInput{
+    
    @IsString()
     id: string;
     
@@ -18,9 +19,10 @@ export class CreateWalletDTO implements CreateWalletInput{
 
     @IsNumber()
     value: number;
+    
     @IsArray()
-    @IsUUID(undefined,{ each: true})
-    @ArrayUnique()
-    walletMovimentId: String[];
+    @ValidateNested({each: true})
+    @Type(()=> CreateWalletMovimentDTO)
+    walletMovimente: CreateWalletMovimentInput[];
 
 }
