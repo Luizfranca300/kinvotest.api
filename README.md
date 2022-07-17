@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://play-lh.googleusercontent.com/324WIa09c_sBjh5PdLXrVxXhqjWhpo2jVs-j8SH6LJfGdSeX9pt8HOdPcjrp4o79lz4" width="200" alt="Kinvo Logo" /></a>
+  <a target="blank"><img src="https://play-lh.googleusercontent.com/324WIa09c_sBjh5PdLXrVxXhqjWhpo2jVs-j8SH6LJfGdSeX9pt8HOdPcjrp4o79lz4" width="200" alt="Kinvo Logo" /></a>
 </p>
 
 
@@ -33,8 +33,22 @@
 
 ## Installation
 
-```bash
+```
+bash
 $ yarn
+
+create a .env file in the project root and add the connection string
+
+# Self
+NODE_ENV=development
+ADDRESS=0.0.0.0
+PORT=3333
+
+# Prism
+PRISMA_DATABASE_URL="sqlserver://localhost:1433;database=kinvotest;user=username;password=youpassword;trustServerCertificate=true
+
+$ npx prisma migrate dev
+
 ```
 
 ## Running the app
