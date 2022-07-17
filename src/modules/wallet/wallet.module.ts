@@ -13,6 +13,6 @@ providers:[
 ],
 controllers:[
  WalletsController,
-]
+],
 })
 export class WalletModule{}
