@@ -9,7 +9,7 @@ import { ConfigService } from '@nestjs/config';
 import { plainToClass } from 'class-transformer';
 import { Observable } from 'rxjs';
 
-import { RequestPaginationDTO } from '~/common/presentation';
+import { RequestPaginationDTO } from 'src/common/presentation';
 
 @Injectable()
 export class PaginationInterceptor implements NestInterceptor {

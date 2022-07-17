@@ -1,11 +1,10 @@
 import { ApiProperty } from '@nestjs/swagger';
 
 import { Exclude, Expose } from 'class-transformer';
-
-import { Pagination } from '~/common/domain';
+import { Pagination } from 'src/common/domain';
 
 @Exclude()
-export class PaginationDTO implements Pagination {
+export class PaginationDTO implements Pagination  { 
   @Expose()
   @ApiProperty()
   public page: number;

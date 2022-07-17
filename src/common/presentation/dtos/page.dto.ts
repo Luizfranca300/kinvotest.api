@@ -3,7 +3,7 @@ import { ApiProperty } from '@nestjs/swagger';
 
 import { Exclude, Expose, Type } from 'class-transformer';
 
-import { Page } from '~/common/domain';
+import { Page } from 'src/common/domain';
 
 import { PaginationDTO } from './pagination.dto';
 

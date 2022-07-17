@@ -1,7 +1,8 @@
 import { Expose } from 'class-transformer';
 import { IsInt } from 'class-validator';
+import { RequestPagination } from 'src/common/domain';
 
-import { RequestPagination } from '~/common/domain';
+
 
 @Expose()
 export class RequestPaginationDTO implements RequestPagination {

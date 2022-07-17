@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 
 import { Observable } from 'rxjs';
 
-import { HttpClientContract } from '~/common/data';
+import { HttpClientContract } from 'src/common/data';
 
 @Injectable()
 export class HttpClient implements HttpClientContract {
