@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Kinvo Logo" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="https://play-lh.googleusercontent.com/324WIa09c_sBjh5PdLXrVxXhqjWhpo2jVs-j8SH6LJfGdSeX9pt8HOdPcjrp4o79lz4" width="200" alt="Kinvo Logo" /></a>
 </p>
 
 
