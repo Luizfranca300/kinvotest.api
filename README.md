@@ -29,7 +29,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Objetivo criar um controle de gastos com receitas e despesas.
 
 ## Installation
 

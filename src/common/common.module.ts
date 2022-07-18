@@ -5,7 +5,7 @@ import { APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
 import * as Agent from 'agentkeepalive';
 
 import { HTTP_CLIENT } from './constants';
-import { HttpClient, PaginationInterceptor, PrismaService } from './infra';
+import { HttpClient, PrismaService } from './infra';
 import { makeValidationPipe } from './main';
 
 @Global()
@@ -32,10 +32,6 @@ import { makeValidationPipe } from './main';
     {
       provide: APP_INTERCEPTOR,
       useClass: ClassSerializerInterceptor,
-    },
-    {
-      provide: APP_INTERCEPTOR,
-      useClass: PaginationInterceptor,
     },
     // Adapters
     { provide: HTTP_CLIENT, useClass: HttpClient },
