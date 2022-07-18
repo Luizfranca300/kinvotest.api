@@ -7,19 +7,22 @@ import {
     ValidateNested,
   } from 'class-validator';
 import { CreateWalletMovimentDTO } from "./create-wallet-moviment.dto";
+import { ApiProperty } from "@nestjs/swagger";
 
 @Expose()
 export class CreateWalletDTO implements CreateWalletInput{
-    
-   @IsString()
+    @ApiProperty()
+    @IsString()
     id: string;
-    
+
+    @ApiProperty()
     @IsString()
     name: string;
 
+    @ApiProperty()
     @IsNumber()
     value: number;
-    
+    @ApiProperty()
     @IsArray()
     @ValidateNested({each: true})
     @Type(()=> CreateWalletMovimentDTO)
