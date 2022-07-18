@@ -1,5 +1,5 @@
 import { Expose, Type } from "class-transformer";
-import { CreateWalletInput, CreateWalletMovimentInput } from "src/modules/wallet/inputs";
+import { CreateWalletInput, CreateWalletMovimentInput } from "src/modules/wallet/domain/inputs";
 import {
     IsArray,
     IsNumber,

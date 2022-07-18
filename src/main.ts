@@ -14,8 +14,8 @@ declare const module: any;
 
 function setupSwaggerDocumentation(app: INestApplication): void {
   const config = new DocumentBuilder()
-    .setTitle('Kinvo Purchases')
-    .setDescription('The @kinvo/purchases API description')
+    .setTitle('Wallet control')
+    .setDescription('The @kinvo/test API description')
     .setVersion('1.0')
     .build();
 

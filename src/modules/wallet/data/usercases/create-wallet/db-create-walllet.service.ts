@@ -1,7 +1,7 @@
 import { Inject } from "@nestjs/common";
 import { WALLET_REPOSITORY } from "src/modules/wallet/constants";
 import { CreateWallet, Wallet } from "src/modules/wallet/domain";
-import { CreateWalletInput } from "src/modules/wallet/inputs";
+import { CreateWalletInput } from "src/modules/wallet/domain/inputs";
 import { WalletRepository } from "../../repositories";
 
 export class DbCreateWalletService implements CreateWallet{

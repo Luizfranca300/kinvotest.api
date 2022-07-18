@@ -1,4 +1,4 @@
-import { CreateWalletInput } from "../../inputs";
+import { CreateWalletInput } from "../inputs";
 import { Wallet } from "../models";
 
 export interface CreateWallet{

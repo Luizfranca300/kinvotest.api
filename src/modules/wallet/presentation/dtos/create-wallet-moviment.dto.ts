@@ -1,5 +1,5 @@
-import { CreateWalletMovimentInput } from "src/modules/wallet/inputs";
-import { MovimentType } from "../../enums";
+import { CreateWalletMovimentInput } from "src/modules/wallet/domain/inputs";
+import { MovimentType } from "../../domain/enums";
 
 export class CreateWalletMovimentDTO implements CreateWalletMovimentInput{
     id: string;

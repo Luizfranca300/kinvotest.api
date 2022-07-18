@@ -1,4 +1,4 @@
-import { MovimentType } from "../domain/enums";
+import { MovimentType } from "../enums";
 
 export interface CreateWalletMovimentInput{
     id: string;
