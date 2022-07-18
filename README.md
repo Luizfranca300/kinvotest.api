@@ -2,6 +2,11 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
+<p align="center">
+  <a target="blank"><img src="https://play-lh.googleusercontent.com/324WIa09c_sBjh5PdLXrVxXhqjWhpo2jVs-j8SH6LJfGdSeX9pt8HOdPcjrp4o79lz4" width="200" alt="Kinvo Logo" /></a>
+</p>
+
+
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
@@ -28,34 +33,41 @@
 
 ## Installation
 
-```bash
-$ npm install
+```
+bash
+$ yarn
+
+create a .env file in the project root and add the connection string
+
+# Self
+NODE_ENV=development
+ADDRESS=0.0.0.0
+PORT=3333
+
+# Prism
+PRISMA_DATABASE_URL="sqlserver://localhost:1433;database=kinvotest;user=username;password=youpassword;trustServerCertificate=true
+
+$ npx prisma migrate dev
+
 ```
 
 ## Running the app
 
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
+bash
+# development
+$ yarn start
+
 
 ## Test
 
 ```bash
 # unit tests
-$ npm run test
+$ yarn test
 
 # e2e tests
-$ npm run test:e2e
+$ yarn test:e2e
 
-# test coverage
-$ npm run test:cov
 ```
 
 ## Support
