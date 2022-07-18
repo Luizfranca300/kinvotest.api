@@ -26,6 +26,6 @@ export class CreateWalletDTO implements CreateWalletInput{
     @IsArray()
     @ValidateNested({each: true})
     @Type(()=> CreateWalletMovimentDTO)
-    walletMovimente: CreateWalletMovimentInput[];
+    walletMovimente?: CreateWalletMovimentInput[];
 
 }

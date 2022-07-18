@@ -15,7 +15,7 @@ export class WalletDTO implements Wallet{
     value: number;
     @Expose()
     @Type(() => walletMovimentDTO)
-    walletMoviment: WalletMoviment[];
+    walletMoviment?: WalletMoviment[];
 
     constructor(partial: Partial<WalletDTO>) {
         Object.assign(this, partial);
